@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>symmetrical-test</title>
+</head>
+<body>
+<script>
+    function isPalindrome(s) {
+        let check = true;
+        let a = s.length;
+        for (let i = 0; i < a; i++) {
+            if (s[i] === s[a-1]) {
+                a--;
+            } else check = false;
+        }
+        if (check === true) {
+            return true;
+        }
+        else return false;
+    }
+</script>
+</body>
+</html>
